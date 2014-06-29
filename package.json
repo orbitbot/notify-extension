@@ -1,0 +1,21 @@
+{
+  "name": "notify-extension",
+  "version": "0.0.0",
+  "description": "Simple Node.js server sending notifications to a Chrome Browser Extension",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orbitbot/notify-extension"
+  },
+  "keywords": [
+    "chrome-extensions",
+    "socket.io",
+    "sse"
+  ],
+  "author": "Patrik Johnson",
+  "license": "MIT",
+  "homepage": "https://github.com/orbitbot/notify-extension",
+  "dependencies": {
+    "socket.io": "^1.0.6"
+  }
+}
