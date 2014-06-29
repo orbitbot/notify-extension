@@ -16,33 +16,34 @@ Installation
  Server
 
 ```bash
-$ git clone https://github.com/orbitbot/dyn-url
-$ cd dyn-url
-$ npm install
+$ git clone https://github.com/orbitbot/notify-extension  
+$ cd notify-extension  
+$ npm install  
 ```
 
 Extension
 
-- Load the extension into your Chrome Browser, see: [https://developer.chrome.com/extensions/getstarted#unpacked]
+- Load the extension into your Chrome Browser, see: https://developer.chrome.com/extensions/getstarted#unpacked
 
 
 Usage
 -----
 
-- Start the server:
-  ```bash
-  $ node server.js
-  Started node server on port 3000 with process id: 8497
-   > send socket.io message with
-     $ kill -1 8497
+- Start the server:  
   ```
-- Start your browser, you should see the extension icon to the right of the Chrome omnibox (address bar), and from the node server you should see a connection event
+  $ node server.js  
+
+  Started node server on port 3000 with process id: 8497  
+   > send socket.io message with  
+     $ kill -1 8497  
   ```
-  socket.io client connected from 127.0.0.1:3000
+- Start your browser, you should see the extension icon to the right of the Chrome omnibox (address bar), and from the node server you should see a connection event  
   ```
-- Send notifications to the extension by running the provided command in a separate terminal window:
+  socket.io client connected from 127.0.0.1:3000  
   ```
-  $ kill -1 8497
+- Send notifications to the extension by running the provided command in a separate terminal window:  
+  ```
+  $ kill -1 8497  
   ```
 - clicking the extension icon will display the total number of received messages, reset the counter displayed on the icon itself and change the icon back to inactive state
 
@@ -50,7 +51,7 @@ Usage
 Notes
 -----
 
-- the server component has only been tested on a Linux environment, generating the correct signals to send messages on other platforms may be possible, see here: [http://nodejs.org/api/process.html#process_signal_events]
+- the server component has only been tested on a Linux environment, generating the correct signals to send messages on other platforms may be possible, see here: http://nodejs.org/api/process.html#process_signal_events
 
 
 Licence
