@@ -8,6 +8,7 @@ Requirements
 ------------
 
 - node.js
+- Chrome or Chromium browser
 
 
 Installation
@@ -36,14 +37,26 @@ Usage
   Started node server on port 3000 with process id: 8497  
    > send socket.io message with  
      $ kill -1 8497  
+   > send SSE message with
+     $ kill -2 8487
   ```
-- Start your browser, you should see the extension icon to the right of the Chrome omnibox (address bar), and from the node server you should see a connection event  
+- Start your browser, you should see the extension icon to the right of the Chrome omnibox (address bar), and from the node server you should see connection events  
   ```
   socket.io client connected from 127.0.0.1:3000  
-  ```
+  ``` 
+  and  
+
+  ``` 
+  got new sse connection
+  ``` 
 - Send notifications to the extension by running the provided command in a separate terminal window:  
   ```
   $ kill -1 8497  
+  ```
+  or  
+
+  ```
+  $ kill -2 8497  
   ```
 - clicking the extension icon will display the total number of received messages, reset the counter displayed on the icon itself and change the icon back to inactive state
 
